@@ -5,11 +5,11 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">CGS We Guide You To Your Career Path</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+          <p class="text-white-75 font-weight-light mb-5">The Career Guidance System is a web application where students can see various career path opportunities, the system shows various fields available after O’level, for graduation (in the UNIVERSITY) and also fields available after graduation. It also lists different colleges/Universities available where students can search colleges/ Universities as per their courses. </p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">We've got what you need!</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+          <p class="text-white-50 mb-4">	The Career Guidance System is a web application where students can see various career path opportunities, the system shows various fields available after O’level, for graduation (in the UNIVERSITY) and also fields available after graduation. It also lists different colleges/Universities available where students can search colleges/ Universities as per their courses. The system then allows users to give a test. It is actually a series of tests of various general questions. After test completion a score is calculated for each test. Based on those results the system manipulates and calculates the best career for that user. This result is then emailed to that user. The system also consists of an admin module and the registrar module. The registrar can login to the system and enter colleges along with their specifications, while the admin can login and manage the users. The system also includes an ebooks page where a user may click to read career guidance ebooks in their browser.</p>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
         </div>
       </div>

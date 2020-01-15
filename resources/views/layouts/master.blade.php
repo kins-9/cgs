@@ -14,8 +14,8 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-           
-          
+
+
     <div id="wrapper">
          <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="adjust-nav">
@@ -29,9 +29,9 @@
                         CGS
                     </a>
                 </div>
-              
+
                  <span class="logout-spn" >
-                  <a href="#" style="color:#fff;">LOGOUT</a>  
+                  <a href="#" style="color:#fff;">LOGOUT</a>
 
                 </span>
             </div>
@@ -40,12 +40,12 @@
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                 
+
 
  <li >
                         <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
                     </li>
-                   
+
 
                     <li>
                         <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
@@ -78,21 +78,21 @@
         </nav>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
-         @yield('content')
+         @yield('contents')
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
     <div class="footer">
-      
-    
+
+
              <div class="row">
                 <div class="col-lg-12" >
                     &copy;  Design by: <a href="https://webtechguides.com/hire-me/" style="color:#fff;" target="_blank">Web Tech Guides</a>
                 </div>
         </div>
         </div>
-          
+
 
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
@@ -102,7 +102,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-    
-   
+
+
 </body>
 </html>

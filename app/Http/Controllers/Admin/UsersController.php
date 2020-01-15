@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 
-class UsersController extends Controller
+class \UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,13 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('admin.users.index');
+        //
     }
 
-     /**
+   
+
+
+    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\User  $user

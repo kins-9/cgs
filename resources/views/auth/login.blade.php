@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.logreg')
 
 @section('content')
 <div class="container">
@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-                        
+
                         <div class="form-group">
                             <label for="email" class="text-md-right">{{ __('E-Mail Address') }}</label>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -33,7 +33,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        
+
 
                         <div class="form-group">
                                               <div class="form-check">
@@ -43,7 +43,7 @@
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
-                           
+
                         </div>
 
                         <div class="form-group">
@@ -59,7 +59,7 @@
                                         {{ __('Do you Have an Account? Sign Up') }}
                                     </a>
                                 @endif
-                         
+
                         </div>
                     </form>
                 </div>
