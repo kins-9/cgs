@@ -1,4 +1,4 @@
-   
+
    @extends('layouts.master')
    @section('title')
        Users | CGS
@@ -7,12 +7,12 @@
           <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>BLANK PAGE </h2>   
+                     <h2>BLANK PAGE </h2>
                     </div>
-                </div>              
+                </div>
                  <!-- /. ROW  -->
                   <hr />
-              
-                 <!-- /. ROW  -->           
+
+                 <!-- /. ROW  -->
     </div>
    @endsection
