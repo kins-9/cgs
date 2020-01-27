@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
- 
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -49,30 +49,32 @@ class UsersController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        
-        try
-        {
-            $user = User::findOrFail($users);
 
-            $this->validate($request, [
-                'name' => 'required',
-                'phone'=>'required',
-                'email' => 'required|email|unique:users,email,'.$users,
-            ]);
+        $user->roles()->sync($request->roles);
+        return redirect()->route('admin.users.index');
+        // try
+        // {
+        //     $user = User::findOrFail($users);
 
-            $user->email = $request->input('email');
+        //     $this->validate($request, [
+        //         'name' => 'required',
+        //         'phone'=>'required',
+        //         'email' => 'required|email|unique:users,email,'.$users,
+        //     ]);
 
-            $user->save();
+        //     $user->email = $request->input('email');
 
-            return redirect()->route('admin.users.index')->with('success', "The user <strong>$user->name</strong> has successfully been updated.");
-        }
-        catch (ModelNotFoundException $ex) 
-        {
-            if ($ex instanceof ModelNotFoundException)
-            {
-                return response()->view('errors.'.'404');
-            }
-        }
+        //     $user->save();
+
+        //     return redirect()->route('admin.users.index')->with('success', "The user <strong>$user->name</strong> has successfully been updated.");
+        // }
+        // catch (ModelNotFoundException $ex)
+        // {
+        //     if ($ex instanceof ModelNotFoundException)
+        //     {
+        //         return response()->view('errors.'.'404');
+        //     }
+        // }
     }
 
     /**
@@ -83,6 +85,8 @@ class UsersController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->roles()->detach();
+        $user->delete();
+        return redirect()->route('admin.users.index');
     }
 }
