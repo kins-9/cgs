@@ -20,8 +20,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //
 
-Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
+Route::group(['middleware' => ['auth','admin']], function() {
+    Route::get('/admin' , function(){
+        return view('admin.dashboard.dashboard');
+    });
+    Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::resource('/users', 'UsersController',['except'=>['show','create','store']]);
         Route::resource('/courses', 'CoursesController');
 });
+});
+
+
 

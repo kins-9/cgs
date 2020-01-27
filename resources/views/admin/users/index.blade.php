@@ -45,13 +45,14 @@
                                 <td>{{implode(',', $row->roles()->get()->pluck('name')->toArray())}}</td>
                                 <td>
                                     <a href="{{ route('admin.users.edit',  $row->id) }}" class="btn btn-info btn-xs float-left"><i class="fa fa-pencil" title="Edit"></i> </a>
-                                    <form action="{{ route('admin.users.destroy', $row->id) }}" method="post" class="float-left">
+                                    <form action="{{ route('admin.users.destroy', $row) }}" method="post" class="float-left">
                                         @csrf
                                         {{ method_field('DELETE') }}
-                                    </form>
-                                   <button class="btn btn-danger" type="submit">
+                                        <button class="btn btn-danger" type="submit">
                                            <i class="fa fa-trash" title="Delete"></i>
                                    </button>
+                                    </form>
+
                                 </td>
                             </tr>
                             @endforeach

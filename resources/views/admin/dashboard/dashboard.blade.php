@@ -1,16 +1,16 @@
-  
+
    @extends('layouts.master')
-   @section('title')
+   {{-- @section('title')
        ADMIN DASHBOARD | CGS
-   @endsection
+   @endsection --}}
    @section('content')
-  
+
   <div id="page-inner">
                 <div class="row">
                     <div class="col-lg-12">
-                     <h2>ADMIN DASHBOARD</h2>   
+                     <h2>ADMIN DASHBOARD</h2>
                     </div>
-                </div>              
+                </div>
                  <!-- /. ROW  -->
                   <hr />
                 <div class="row">
@@ -18,10 +18,10 @@
                         <div class="alert alert-info">
                              <strong>Welcome Suyash ! </strong> You Have No pending Task For Today.
                         </div>
-                       
+
                     </div>
                     </div>
-                  <!-- /. ROW  --> 
+                  <!-- /. ROW  -->
                             <div class="row text-center pad-top">
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -30,10 +30,10 @@
                       <h4>Check Data</h4>
                       </a>
                       </div>
-                     
-                     
-                  </div> 
-                 
+
+
+                  </div>
+
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="blank.html" >
@@ -41,8 +41,8 @@
                       <h4>Mail Box</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -51,8 +51,8 @@
                       <h4>New Issues</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -61,8 +61,8 @@
                       <h4>See Users</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -71,8 +71,8 @@
                       <h4>Admin </h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -81,13 +81,13 @@
                       <h4>Support</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
               </div>
-                 <!-- /. ROW  --> 
+                 <!-- /. ROW  -->
                 <div class="row text-center pad-top">
-                 
+
                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="blank.html" >
@@ -95,8 +95,8 @@
                       <h4>All Docs</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -105,8 +105,8 @@
                       <h4>Settings</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -115,8 +115,8 @@
                       <h4>Live Talk</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -125,8 +125,8 @@
                       <h4>Notifications </h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -135,8 +135,8 @@
                       <h4>Launch</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -145,14 +145,14 @@
                       <h4>Register User</h4>
                       </a>
                       </div>
-                     
-                     
-                  </div> 
-              </div>   
-                  <!-- /. ROW  -->    
+
+
+                  </div>
+              </div>
+                  <!-- /. ROW  -->
                  <div class="row text-center pad-top">
-                   
-                 
+
+
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="blank.html" >
@@ -160,8 +160,8 @@
                       <h4>Mail Box</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -170,8 +170,8 @@
                       <h4>New Issues</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -180,8 +180,8 @@
                       <h4>See Users</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -190,8 +190,8 @@
                       <h4>Admin </h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -200,8 +200,8 @@
                       <h4>Support</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -210,11 +210,11 @@
                       <h4>Check Data</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
               </div>
-                 <!-- /. ROW  -->  
+                 <!-- /. ROW  -->
                  <div class="row text-center pad-top">
                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -223,8 +223,8 @@
                       <h4>Launch</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -233,8 +233,8 @@
                       <h4>All Docs</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -243,8 +243,8 @@
                       <h4>Settings</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -253,8 +253,8 @@
                       <h4>Live Talk</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -263,10 +263,10 @@
                       <h4>Notifications </h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
-                  
+
                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="blank.html" >
@@ -274,15 +274,15 @@
                       <h4>Register User</h4>
                       </a>
                       </div>
-                     
-                     
-                  </div> 
-              </div>   
-                  <!-- /. ROW  -->  
+
+
+                  </div>
+              </div>
+                  <!-- /. ROW  -->
                 <div class="row text-center pad-top">
-                   
-                 
-                  
+
+
+
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="blank.html" >
@@ -290,8 +290,8 @@
                       <h4>New Issues</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -300,8 +300,8 @@
                       <h4>See Users</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -310,8 +310,8 @@
                       <h4>Admin </h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -320,8 +320,8 @@
                       <h4>Support</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -330,8 +330,8 @@
                       <h4>Check Data</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
@@ -340,19 +340,19 @@
                       <h4>Mail Box</h4>
                       </a>
                       </div>
-                     
-                     
+
+
                   </div>
               </div>
-                 <!-- /. ROW  -->   
+                 <!-- /. ROW  -->
 				  <div class="row">
                     <div class="col-lg-12 ">
 					<br/>
-                      
-                       
+
+
                     </div>
                     </div>
-                  <!-- /. ROW  --> 
+                  <!-- /. ROW  -->
     </div>
              <!-- /. PAGE INNER  -->
             </div>
