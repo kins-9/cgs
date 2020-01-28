@@ -31,7 +31,7 @@ class LoginController extends Controller
         protected function redirectTo()
         {
             if (Auth::user()->userType=='admin') {
-                return 'dashboard';
+                return view('admin.dashboard.dashboard');
             }else {
                 return 'home';
             }

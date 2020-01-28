@@ -1,23 +1,52 @@
-@extends('layouts.master')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+   @extends('layouts.master')
+   {{-- @section('title')
+       ADMIN DASHBOARD | CGS
+   @endsection --}}
+   @section('content')
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+  <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>ADMIN DASHBOARD</h2>
+                    </div>
                 </div>
+                 <!-- /. ROW  -->
+                  <hr />
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="alert alert-info">
+                             <strong>Welcome {{ Auth::user()->name }}! </strong> You Have No pending Task For Today.
+                        </div>
+
+                    </div>
+                                      
+                    </div>
+                  <!-- /. ROW  -->
+                   <div class="row">
+                    <div class="col-lg-3 ">
+                        <div class="alert alert-info">
+                             <strong>Welcome {{ Auth::user()->name }}! </strong> You Have No pending Task For Today.
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 ">
+                        <div class="alert alert-info">
+                             <strong>Welcome {{ Auth::user()->name }}! </strong> You Have No pending Task For Today.
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="alert alert-info">
+                             <strong>Welcome {{ Auth::user()->name }}! </strong> You Have No pending Task For Today.
+                        </div>
+
+                    </div>
+                                      
+                    </div>
+                  <!-- /. ROW  -->
+   
+             <!-- /. PAGE INNER  -->
             </div>
-        </div>
-    </div>
-</div>
 @endsection
+

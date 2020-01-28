@@ -117,7 +117,7 @@
               </li>
 
               <li class="nav-item pl-3">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('admin.tests.index') }}">
                   <span data-feather="bar-chart-2"></span>
                   Aptitude Test Results
                 </a>
