@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Courses;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CoursesController extends Controller
+class CollegeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +41,10 @@ class CoursesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Courses  $courses
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Courses $courses)
+    public function show($id)
     {
         //
     }
@@ -53,10 +52,10 @@ class CoursesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Courses  $courses
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Courses $courses)
+    public function edit($id)
     {
         //
     }
@@ -65,10 +64,10 @@ class CoursesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Courses  $courses
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Courses $courses)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +75,10 @@ class CoursesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Courses  $courses
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Courses $courses)
+    public function destroy($id)
     {
         //
     }

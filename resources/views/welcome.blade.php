@@ -40,24 +40,24 @@
           <div class="mt-5">
             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
             <h3 class="h4 mb-2">Career Info</h3>
-            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+            <p class="text-muted mb-0">A platform where All the details towards your Career path!</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
             <h3 class="h4 mb-2">Link to Mentors and Experts</h3>
-            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+            <p class="text-muted mb-0">For more Guidance We have provided you with Experts to help you out</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-globe text-primary mb-4"></i>
             <h3 class="h4 mb-2">University and Courses Catalogue</h3>
-            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+            <p class="text-muted mb-0">There are links to various universities offering the courses towards your career!</p>
           </div>
         </div>
-       
+
       </div>
     </div>
   </section>

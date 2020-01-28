@@ -21,8 +21,8 @@
 
 </head>
 <body>
-    <div id="appass">
-        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -71,9 +71,10 @@
                     </ul>
                 </div>
             </div>
-        </nav> --}}
+        </nav>
 
             @yield('content')
+            
           </div>
 </body>
 </html>

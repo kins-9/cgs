@@ -92,7 +92,7 @@
                 </a>
               </li>
                <li class="nav-item pl-3">
-                <a class="nav-link" href="{{ route('admin.users.index') }}">
+                <a class="nav-link" href="{{ route('admin.mentors.index') }}">
                   <span data-feather="users"></span>
                   Mentors
                 </a>
@@ -104,7 +104,7 @@
                 </a>
               </li>
               <li class="nav-item pl-3">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{ route('courses.index')}}">
                   <span data-feather="file"></span>
                   Courses
                 </a>
