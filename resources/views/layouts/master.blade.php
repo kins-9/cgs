@@ -110,7 +110,7 @@
                 </a>
               </li>
                 <li class="nav-item pl-3">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('admin.colleges.index') }}">
                   <span data-feather="file"></span>
                   Universities/Colleges
                 </a>

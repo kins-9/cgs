@@ -20,17 +20,16 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{ route('courses.store') }}">
+      <form method="post" action="{{ route('admin.colleges.store') }}">
           <div class="form-group">
               @csrf
-              <label for="name">Course Name:</label>
-              <input type="text" class="form-control" name="course_name"/>
+              <label for="name">college Name:</label>
+              <input type="text" class="form-control" name="college_name"/>
           </div>
         
           <div class="form-group">
-                <label for="description">Course Description:</label>
-                <textarea class="form-control" name="course_description" placeholder="Enter Course Details" required></textarea>
-              
+                <label for="description">college Website:</label>
+                <input type="url" class="form-control" name="college_website"/>
           </div>
           <button type="submit" class="btn btn-primary">Add</button>
       </form>

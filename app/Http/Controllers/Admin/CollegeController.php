@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\College;
 
 class CollegeController extends Controller
 {
@@ -14,7 +15,8 @@ class CollegeController extends Controller
      */
     public function index()
     {
-        //
+        $colleges=College::all();
+        return view('admin.colleges.index',compact('colleges'));
     }
 
     /**
@@ -24,7 +26,7 @@ class CollegeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.colleges.create');
     }
 
     /**
@@ -35,7 +37,17 @@ class CollegeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+           $request->validate([
+                'college_name'=>'required',
+                'college_website'=>'required|url'  
+            ]);
+        $college = new College([
+            'college_name'=>$request->get('college_name'),
+            'college_website'=>$request->get('college_website')
+            ]);
+        $college->save();
+        return redirect('/admin/colleges')->with('success', 'College has been added');
+    
     }
 
     /**
@@ -57,7 +69,8 @@ class CollegeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $colleges = College::find($id);
+        return view('admin.colleges.edit',compact('colleges'));
     }
 
     /**
@@ -69,7 +82,18 @@ class CollegeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+          $request->validate([
+                'college_name'=>'required',
+                'college_website'=>'required|url'  
+            ]);
+             $college = College::find($id);
+      
+        $college->college_name = $request->get('college_name');
+        $college->college_website = $request->get('college_website');
+      
+        $college->save();
+        return redirect('/admin/colleges')->with('success', 'college has been updated');
+  
     }
 
     /**
@@ -80,6 +104,9 @@ class CollegeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $college = College::find($id);
+        $college->delete();
+        return redirect('/admin/colleges')->with('success', 'college has been deleted Successfully');
+   
     }
 }
