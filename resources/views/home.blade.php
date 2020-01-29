@@ -1,5 +1,5 @@
 
-   @extends('layouts.master')
+   @extends('layouts.appl')
    {{-- @section('title')
        ADMIN DASHBOARD | CGS
    @endsection --}}

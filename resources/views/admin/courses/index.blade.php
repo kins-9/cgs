@@ -35,7 +35,7 @@
             <td>{{$course->id}}</td>
             <td>{{$course->course_name}}</td>
             <td>{{$course->course_description}}</td>
-          
+            <td><a href="/courses/{{$course->id}}/tests/create" class="btn btn-primary">Add Test</a></td>
             <td><a href="{{ route('courses.edit',$course->id)}}" class="btn btn-primary">Edit</a></td>
             <td>
                 <form action="{{ route('courses.destroy', $course->id)}}" method="post">

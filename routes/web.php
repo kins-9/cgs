@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/courses', 'CourseController');
+Route::get('admin/home' ,'HomeController@adminHome')->name('admin.home')->middleware('admin');
 //Route::resource('/mentors', 'MentorController');
 //
 
@@ -34,6 +34,13 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::resource('/colleges', 'CollegeController');
         Route::resource('/tests', 'TestController');
 });
+Route::resource('/courses', 'CourseController');
+Route::resource('applicant_courses', 'Applicant\CourseController');
+Route::resource('applicant_mentors', 'Applicant\ExpertController');
+Route::get('/courses/{courses}/tests/create' ,'Admin\TestController@create');
+Route::post('/courses/{courses}/tests' ,'Admin\TestController@store');
+// Route::resource('/courses', 'CourseController@addTest');
+
 
 
 

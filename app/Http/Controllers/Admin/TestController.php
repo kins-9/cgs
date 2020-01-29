@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Test;
+use App\Course;
 class TestController extends Controller
 {
     /**
@@ -24,9 +25,11 @@ class TestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Course $course)
     {
-        return view('admin.tests.create');
+        //   $course = Course::find($id);
+        // return view('admin.tests.create',compact('course'));
+        return view('admin.tests.create', compact('course'));
     }
 
     /**
@@ -35,26 +38,27 @@ class TestController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Course $course)
     {
-        $request->request()->validate([ 
-        'question'=>'required',
-        'option_a'=>'required',
-        'option_b'=>'required',
-        'option_c'=>'required',
-        'option_d'=>'required',
-        'answer'=>'required'
-        ]);
-        $test= new Test([
-        'question'=>$request->get('question'),
-        'option_a'=>$request->get('option_a'),
-        'option_b'=>$request->get('option_b'),
-        'option_c'=>$request->get('option_c'),
-        'option_d'=>$request->get('option_d'),
-        'answer'=>$request->get('answer')
-        ]);
-        $test->save();
-        return redirect('/admin/tests')->with('success', 'Test Question Added Successfully !');
+       dd(request()->all());
+        // $request->request()->validate([ 
+        // 'question'=>'required',
+        // 'option_a'=>'required',
+        // 'option_b'=>'required',
+        // 'option_c'=>'required',
+        // 'option_d'=>'required',
+        // 'answer'=>'required'
+        // ]);
+        // $test= new Test([
+        // 'question'=>$request->get('question'),
+        // 'option_a'=>$request->get('option_a'),
+        // 'option_b'=>$request->get('option_b'),
+        // 'option_c'=>$request->get('option_c'),
+        // 'option_d'=>$request->get('option_d'),
+        // 'answer'=>$request->get('answer')
+        // ]);
+        // $test->save();
+        // return redirect('/admin/tests')->with('success', 'Test Question Added Successfully !');
     }
 
     /**

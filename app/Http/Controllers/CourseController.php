@@ -58,6 +58,18 @@ class CourseController extends Controller
     {
         //
     }
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function view()
+    {
+        $courses= Course::all();
+        return view('applicants.courses.index', compact('courses')); 
+    }
+
 
     /**
      * Show the form for editing the specified resource.

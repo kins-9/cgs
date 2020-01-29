@@ -29,11 +29,20 @@
       <div class="sidebar-heading">CGS User </div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Experts</a>
+        <a href="applicant_mentors" class="list-group-item list-group-item-action bg-light">Experts</a>
+        <a href="applicant_courses" class="list-group-item list-group-item-action bg-light">Courses</a>
         {{--  <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>  --}}
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Logout</a>
+         <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -42,7 +51,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+    
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -64,22 +73,14 @@
                 {{--  <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>  --}}
                 <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                             
               </div>
             </li>
           </ul>
         </div>
       </nav>
 
-      <div class="container-fluid">
+      <div class="container-fluid mb-5">
              @yield('content')
              
       </div>
@@ -90,8 +91,8 @@
   <!-- /#wrapper -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{{ asset('assets/vendor/jquery/jquery.min.js'}})"></script>
-  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'}})"></script>
+  <script src="{{ asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Menu Toggle Script -->
   <script>
