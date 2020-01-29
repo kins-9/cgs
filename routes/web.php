@@ -37,9 +37,19 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 Route::resource('/courses', 'CourseController');
 Route::resource('applicant_courses', 'Applicant\CourseController');
 Route::resource('applicant_mentors', 'Applicant\ExpertController');
+
 Route::get('/courses/{courses}/tests/create' ,'Admin\TestController@create');
+Route::get('applicant_courses/{courses}' ,'Applicant\CourseController@show');
 Route::post('/courses/{courses}/tests' ,'Admin\TestController@store');
-// Route::resource('/courses', 'CourseController@addTest');
+//Route::resource('/courses', 'CourseController@addTest');
+
+
+// Route::get('/courses/{course}/questions/create', 'QuestionController@create');
+// Route::post('/courses/{course}/questions', 'QuestionController@store');
+// Route::delete('/courses/{course}/questions/{question}', 'QuestionController@destroy');
+
+// Route::get('/exams/{course}-{slug}', 'SurveyController@show');
+// Route::post('/exams/{course}-{slug}', 'SurveyController@store');
 
 
 

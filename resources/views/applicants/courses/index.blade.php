@@ -18,9 +18,9 @@
     @foreach($courses as $course)
     <div class="col-md-4">
         <div class="alert alert-info" role="alert">
-             <a href="#" class="alert-link">{{$course->course_name}}</a>.
+             <a href="applicant_courses/{{$course->id}}" class="alert-link">{{$course->course_name}}</a>.
         </div>
     </div>
-    @endforeach    
+    @endforeach
 </div>
 @endsection

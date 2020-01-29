@@ -25,15 +25,15 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="bg-light border-right mr-4" id="sidebar-wrapper">
       <div class="sidebar-heading">CGS User </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="applicant_mentors" class="list-group-item list-group-item-action bg-light">Experts</a>
-        <a href="applicant_courses" class="list-group-item list-group-item-action bg-light">Courses</a>
+        <a href="{{ route('home') }}" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="/applicant_mentors" class="list-group-item list-group-item-action bg-light">Experts</a>
+        <a href="/applicant_courses" class="list-group-item list-group-item-action bg-light">Courses</a>
         {{--  <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>  --}}
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        {{-- <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a> --}}
          <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -50,7 +50,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom mb-4">
     
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +80,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid mb-5">
+      <div class="container-fluid">
              @yield('content')
              
       </div>
